@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trilhaapp/repositories/linguagens_repository.dart';
 import 'package:trilhaapp/repositories/nivel_repository.dart';
 import 'package:trilhaapp/shared/widgets/text_label.dart';
+
 class DadosCadastraisPage extends StatefulWidget {
   const DadosCadastraisPage({Key? key}) : super(key: key);
 
@@ -35,8 +36,8 @@ class _DadosCadastraisPageState extends State<DadosCadastraisPage> {
     var itens = <DropdownMenuItem<int>>[];
     for (var i = 0; i <= quantidadeMaxima; i++) {
       itens.add(DropdownMenuItem(
-        child: Text(i.toString()),
         value: i,
+        child: Text(i.toString()),
       ));
     }
     return itens;
@@ -81,7 +82,7 @@ class _DadosCadastraisPageState extends State<DadosCadastraisPage> {
                               value: nivel.toString(),
                               groupValue: nivelSelecionado,
                               onChanged: (value) {
-                                print(value);
+                                debugPrint(value);
                                 setState(() {
                                   nivelSelecionado = value.toString();
                                 });

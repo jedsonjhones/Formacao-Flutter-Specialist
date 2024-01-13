@@ -46,7 +46,7 @@ class CustonDrawer extends StatelessWidget {
                   child: Image.network(
                       "https://hermes.digitalinnovation.one/assets/diome/logo.png"),
                 ),
-                accountName: const Text("Danilo Perez"),
+                accountName: const Text("Jedson Jhones"),
                 accountEmail: const Text("email@email.com")),
           ),
           InkWell(
@@ -54,8 +54,8 @@ class CustonDrawer extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 width: double.infinity,
-                child: const Row(
-                  children: [
+                child: Row(
+                  children: const [
                     Icon(Icons.person),
                     SizedBox(
                       width: 5,
@@ -80,8 +80,8 @@ class CustonDrawer extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 width: double.infinity,
-                child: const Row(
-                  children: [
+                child: Row(
+                  children: const [
                     Icon(Icons.info),
                     SizedBox(
                       width: 5,
@@ -98,8 +98,8 @@ class CustonDrawer extends StatelessWidget {
                     return Container(
                       padding: const EdgeInsets.symmetric(
                           vertical: 16, horizontal: 12),
-                      child: const Column(
-                        children: [
+                      child: ListView(
+                        children: const [
                           Text(
                             "Termos de uso e privacidade",
                             style: TextStyle(
@@ -128,8 +128,8 @@ class CustonDrawer extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 width: double.infinity,
-                child: const Row(
-                  children: [
+                child: Row(
+                  children: const [
                     Icon(Icons.album),
                     SizedBox(
                       width: 5,
@@ -148,8 +148,8 @@ class CustonDrawer extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 width: double.infinity,
-                child: const Row(
-                  children: [
+                child: Row(
+                  children: const [
                     Icon(Icons.exit_to_app),
                     SizedBox(
                       width: 5,
@@ -170,8 +170,8 @@ class CustonDrawer extends StatelessWidget {
                         "Meu App",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      content: const Wrap(
-                        children: [
+                      content: Wrap(
+                        children: const [
                           Text("Voce sairá do aplicativo!"),
                           Text("Deseja realmente sair do aplicativo?"),
                         ],
